@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.2.0" immediate="true" name="Airtel.sai">
+    <property name="camelContextId" value="packs"/>
+    <property name="camelRouteId" value="foo"/>
+    <property name="active" value="true"/>
+    <property name="from" value="timer:foo?period=5000"/>
+    <property name="to" value="log:foo"/>
+    <reference name="camelComponent" interface="org.apache.camel.spi.ComponentResolver" cardinality="1..n" policy="dynamic" bind="gotCamelComponent" unbind="lostCamelComponent" policy-option="greedy"/>
+    <implementation class="Airtel.sai"/>
+</scr:component>

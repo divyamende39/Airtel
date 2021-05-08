@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1620455436022
+Build-Jdk: 1.8.0_291
+Built-By: HP
+Bundle-ManifestVersion: 2
+Bundle-Name: A Camel OSGi SCR Route
+Bundle-SymbolicName: Airtel.packs
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: Airtel;uses:="org.apache.camel,org.apache.camel.scr,org.
+ osgi.framework";version="1.0.0"
+Import-Package: org.apache.camel;version="[2.25,3)",org.apache.camel.bui
+ lder;version="[2.25,3)",org.apache.camel.impl;version="[2.25,3)",org.ap
+ ache.camel.model;version="[2.25,3)",org.apache.camel.scr;version="[2.25
+ ,3)",org.apache.camel.spi;version="[2.25,3)",org.osgi.framework;version
+ ="[1.5,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/Airtel.sai.xml
+Tool: Bnd-3.5.0.201709291849

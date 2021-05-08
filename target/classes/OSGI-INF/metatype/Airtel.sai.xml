@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF\l10n/Airtel.sai">
+    <OCD id="Airtel.sai" name="%Airtel.sai.name" description="%Airtel.sai.description">
+        <AD id="camelContextId" type="String" default="packs" name="%Airtel.sai.camelContextId.name" description="%Airtel.sai.camelContextId.description"/>
+        <AD id="camelRouteId" type="String" default="foo" name="%Airtel.sai.camelRouteId.name" description="%Airtel.sai.camelRouteId.description"/>
+        <AD id="active" type="String" default="true" name="%Airtel.sai.active.name" description="%Airtel.sai.active.description"/>
+        <AD id="from" type="String" default="timer:foo?period=5000" name="%Airtel.sai.from.name" description="%Airtel.sai.from.description"/>
+        <AD id="to" type="String" default="log:foo" name="%Airtel.sai.to.name" description="%Airtel.sai.to.description"/>
+    </OCD>
+    <Designate pid="Airtel.sai">
+        <Object ocdref="Airtel.sai"/>
+    </Designate>
+</metatype:MetaData>
